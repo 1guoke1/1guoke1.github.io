@@ -1,0 +1,194 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>PX4:学习计划 | Guo King</title><meta name="author" content="Guo Ke"><meta name="copyright" content="Guo Ke"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="为PX4制定合理的学习路线">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PX4:学习计划">
+<meta property="og:url" content="https://1guoke1.github.io/2026/01/17/PX4-%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/index.html">
+<meta property="og:site_name" content="Guo King">
+<meta property="og:description" content="为PX4制定合理的学习路线">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://1guoke1.github.io/images/my_image.jpg">
+<meta property="article:published_time" content="2026-01-17T10:42:13.000Z">
+<meta property="article:modified_time" content="2026-01-17T10:48:13.000Z">
+<meta property="article:author" content="Guo Ke">
+<meta property="article:tag" content="飞控">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://1guoke1.github.io/images/my_image.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "PX4:学习计划",
+  "url": "https://1guoke1.github.io/2026/01/17/PX4-%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/",
+  "image": "https://1guoke1.github.io/images/my_image.jpg",
+  "datePublished": "2026-01-17T10:42:13.000Z",
+  "dateModified": "2026-01-17T10:48:13.000Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Guo Ke",
+      "url": "https://1guoke1.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://1guoke1.github.io/2026/01/17/PX4-%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/index.html"><link rel="preconnect" href="//unpkg.com"/><link rel="preconnect"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="/"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: '/',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'PX4:学习计划',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="https://cdn.staticfile.net/font-awesome/6.4.2/css/all.min.css"><meta name="generator" content="Hexo 8.1.1"></head><body><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url(/2026/01/17/PX4-%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/PX4.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/images/my_image.jpg" alt="Logo"><span class="site-name">Guo King</span></a><a class="nav-page-title" href="/"><span class="site-name">PX4:学习计划</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">PX4:学习计划</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-01-17T10:42:13.000Z" title="发表于 2026-01-17 18:42:13">2026-01-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-01-17T10:48:13.000Z" title="更新于 2026-01-17 18:48:13">2026-01-17</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="PX4-无人机设计与制作学习计划"><a href="#PX4-无人机设计与制作学习计划" class="headerlink" title="PX4 无人机设计与制作学习计划"></a>PX4 无人机设计与制作学习计划</h2><h3 id="第一阶段：软件仿真与环境搭建"><a href="#第一阶段：软件仿真与环境搭建" class="headerlink" title="第一阶段：软件仿真与环境搭建"></a>第一阶段：软件仿真与环境搭建</h3><ul>
+<li>目标： 在不购买硬件的情况下，跑通无人机系统。</li>
+</ul>
+<h4 id="第1步：Linux-基础与环境配置"><a href="#第1步：Linux-基础与环境配置" class="headerlink" title="第1步：Linux 基础与环境配置"></a>第1步：Linux 基础与环境配置</h4><p>  • 安装 Ubuntu 22.04 系统（推荐双系统）。</p>
+<p>  • 学习基础 Linux 命令行 (<code>cd</code>, <code>ls</code>, <code>sudo</code>, <code>git</code>)。</p>
+<p>  • 按照官方指南配置 PX4 编译环境，下载 PX4-Autopilot 源码。</p>
+<h4 id="第2步：SITL-仿真与地面站操作"><a href="#第2步：SITL-仿真与地面站操作" class="headerlink" title="第2步：SITL 仿真与地面站操作"></a>第2步：SITL 仿真与地面站操作</h4><p>  • 运行 Gazebo 仿真：<code>make px4_sitl gazebo</code>。</p>
+<p>  • 熟练使用 QGroundControl (QGC) 地面站。</p>
+<p>  • 在仿真中练习航点规划、起降控制及不同飞行模式切换。</p>
+<h3 id="第二阶段：硬件选型与通讯理论"><a href="#第二阶段：硬件选型与通讯理论" class="headerlink" title="第二阶段：硬件选型与通讯理论"></a>第二阶段：硬件选型与通讯理论</h3><ul>
+<li>目标： 理解硬件架构并完成零件采购。</li>
+</ul>
+<h4 id="第3步：硬件架构与选型"><a href="#第3步：硬件架构与选型" class="headerlink" title="第3步：硬件架构与选型"></a>第3步：硬件架构与选型</h4><p>  • 学习 PX4 核心硬件：FMU、I&#x2F;O 处理器、IMU 冗余设计。</p>
+<p>  • 采购清单： Pixhawk 6C 套装 (含GPS&#x2F;电源模块)、F450机架、无刷电机、电调、ELRS遥控套装、LiPo电池。</p>
+<h4 id="第4步：MAVLink-协议学习"><a href="#第4步：MAVLink-协议学习" class="headerlink" title="第4步：MAVLink 协议学习"></a>第4步：MAVLink 协议学习</h4><p>  • 理解无人机与地面站、机载电脑之间的 MAVLink 通讯机制。</p>
+<p>  • 练习使用 USB&#x2F;网口连接飞控，读取实时传感器数据。</p>
+<p>第三阶段：实机组装与安全飞行</p>
+<ul>
+<li>目标： 完成第一台实机的制作并实现首飞。</li>
+</ul>
+<h4 id="第5步：机械组装与焊接"><a href="#第5步：机械组装与焊接" class="headerlink" title="第5步：机械组装与焊接"></a>第5步：机械组装与焊接</h4><p>  • 完成机架组装、电机方向确认及电调焊接。</p>
+<p>  • 注意磁罗盘远离干扰源，安装减震设备。</p>
+<h4 id="第6步：校准与首飞测试"><a href="#第6步：校准与首飞测试" class="headerlink" title="第6步：校准与首飞测试"></a>第6步：校准与首飞测试</h4><p>  • 在 QGC 中完成姿态、罗盘、遥控器及动力校准。</p>
+<p>  • 强制步骤： 配置 Fail-safe (失控返航) 逻辑。</p>
+<p>  • 实地首飞：测试手动稳态、定高及 GPS 定点悬停。</p>
+<h3 id="第四阶段：深入开发与应用-第7-8周"><a href="#第四阶段：深入开发与应用-第7-8周" class="headerlink" title="第四阶段：深入开发与应用 (第7-8周+)"></a>第四阶段：深入开发与应用 (第7-8周+)</h3><ul>
+<li>目标： 掌握 PX4 应用开发及高级功能。</li>
+</ul>
+<h4 id="第7步：PX4-模块开发"><a href="#第7步：PX4-模块开发" class="headerlink" title="第7步：PX4 模块开发"></a>第7步：PX4 模块开发</h4><p>  • 学习 PX4 软件架构 (uORB 消息机制)。</p>
+<p>  • 尝试编写或修改一个简单的应用程序模块，重新编译固件并刷入。</p>
+<h4 id="第8步：Offboard-模式与-ROS-2"><a href="#第8步：Offboard-模式与-ROS-2" class="headerlink" title="第8步：Offboard 模式与 ROS 2"></a>第8步：Offboard 模式与 ROS 2</h4><p>  • 了解机载电脑 (如树莓派) 与飞控的连接。</p>
+<p>  • 探索 ROS 2 环境下的无人机控制，为视觉避障或自主导航打基础。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://1guoke1.github.io">Guo Ke</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://1guoke1.github.io/2026/01/17/PX4-%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/">https://1guoke1.github.io/2026/01/17/PX4-%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://1guoke1.github.io" target="_blank">Guo King</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%A3%9E%E6%8E%A7/">飞控</a></div><div class="post-share"><div class="social-share" data-image="/images/my_image.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="/" media="print" onload="this.media='all'"><script src="/" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2026/01/17/Hello-World/" title="Hello World!"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">Hello World!</div></div><div class="info-2"><div class="info-item-1">我的第一篇博客我开始搭建自己的博客网站…… </div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/images/my_image.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Guo Ke</div><div class="author-info-description">我的成长记录</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/1guoke1"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/1guoke1" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:guoke@buaa.edu.cn" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #3c6992;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到 Guo King 的博客！<br>这里是果壳的世界。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#PX4-%E6%97%A0%E4%BA%BA%E6%9C%BA%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E4%BD%9C%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92"><span class="toc-number">1.</span> <span class="toc-text">PX4 无人机设计与制作学习计划</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%EF%BC%9A%E8%BD%AF%E4%BB%B6%E4%BB%BF%E7%9C%9F%E4%B8%8E%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-number">1.1.</span> <span class="toc-text">第一阶段：软件仿真与环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC1%E6%AD%A5%EF%BC%9ALinux-%E5%9F%BA%E7%A1%80%E4%B8%8E%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="toc-number">1.1.1.</span> <span class="toc-text">第1步：Linux 基础与环境配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC2%E6%AD%A5%EF%BC%9ASITL-%E4%BB%BF%E7%9C%9F%E4%B8%8E%E5%9C%B0%E9%9D%A2%E7%AB%99%E6%93%8D%E4%BD%9C"><span class="toc-number">1.1.2.</span> <span class="toc-text">第2步：SITL 仿真与地面站操作</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5%EF%BC%9A%E7%A1%AC%E4%BB%B6%E9%80%89%E5%9E%8B%E4%B8%8E%E9%80%9A%E8%AE%AF%E7%90%86%E8%AE%BA"><span class="toc-number">1.2.</span> <span class="toc-text">第二阶段：硬件选型与通讯理论</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC3%E6%AD%A5%EF%BC%9A%E7%A1%AC%E4%BB%B6%E6%9E%B6%E6%9E%84%E4%B8%8E%E9%80%89%E5%9E%8B"><span class="toc-number">1.2.1.</span> <span class="toc-text">第3步：硬件架构与选型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC4%E6%AD%A5%EF%BC%9AMAVLink-%E5%8D%8F%E8%AE%AE%E5%AD%A6%E4%B9%A0"><span class="toc-number">1.2.2.</span> <span class="toc-text">第4步：MAVLink 协议学习</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC5%E6%AD%A5%EF%BC%9A%E6%9C%BA%E6%A2%B0%E7%BB%84%E8%A3%85%E4%B8%8E%E7%84%8A%E6%8E%A5"><span class="toc-number">1.2.3.</span> <span class="toc-text">第5步：机械组装与焊接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC6%E6%AD%A5%EF%BC%9A%E6%A0%A1%E5%87%86%E4%B8%8E%E9%A6%96%E9%A3%9E%E6%B5%8B%E8%AF%95"><span class="toc-number">1.2.4.</span> <span class="toc-text">第6步：校准与首飞测试</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E9%98%B6%E6%AE%B5%EF%BC%9A%E6%B7%B1%E5%85%A5%E5%BC%80%E5%8F%91%E4%B8%8E%E5%BA%94%E7%94%A8-%E7%AC%AC7-8%E5%91%A8"><span class="toc-number">1.3.</span> <span class="toc-text">第四阶段：深入开发与应用 (第7-8周+)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC7%E6%AD%A5%EF%BC%9APX4-%E6%A8%A1%E5%9D%97%E5%BC%80%E5%8F%91"><span class="toc-number">1.3.1.</span> <span class="toc-text">第7步：PX4 模块开发</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AC%AC8%E6%AD%A5%EF%BC%9AOffboard-%E6%A8%A1%E5%BC%8F%E4%B8%8E-ROS-2"><span class="toc-number">1.3.2.</span> <span class="toc-text">第8步：Offboard 模式与 ROS 2</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/01/17/PX4-%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/" title="PX4:学习计划">PX4:学习计划</a><time datetime="2026-01-17T10:42:13.000Z" title="发表于 2026-01-17 18:42:13">2026-01-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/01/17/Hello-World/" title="Hello World!">Hello World!</a><time datetime="2026-01-17T03:21:24.000Z" title="发表于 2026-01-17 11:21:24">2026-01-17</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Guo Ke</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://unpkg.com/hexo-theme-butterfly@5.5.3/source/js/utils.js"></script><script src="https://unpkg.com/hexo-theme-butterfly@5.5.3/source/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
